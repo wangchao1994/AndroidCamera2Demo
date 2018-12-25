@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.wangchao.androidcamerabase.widget.AutoFitTextureView
+        android:id="@+id/camera_auto_fit_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/camera_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:src="@drawable/btn_flash_auto_normal"/>
+    <ImageView
+        android:id="@+id/camera_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/main_camera_id"/>
+
+    <ImageView
+        android:id="@+id/camera_zoom_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_zoom_increase_normal"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_camera_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_photo"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/holo_red_dark" />
+        <TextView
+            android:id="@+id/tv_camera_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_video"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center">
+        <ImageView
+            android:id="@+id/camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_camera_photo"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/camera_video_record_tip_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        />
+    <ImageView
+        android:id="@+id/camera_right_top_controller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_recording_pause"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/camera_show"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp" />
+    <TextView
+        android:id="@+id/camera_video_record_tip_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_default"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+</FrameLayout>
